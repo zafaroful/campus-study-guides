@@ -1,20 +1,20 @@
-# Project Brief
+﻿# Project Brief
 
 ## Project Identity
 
-**Project Name:** Trading Board
+**Project Name:** Campus Study Guides
 
 ## One-Sentence Concept
 
-A personal multi-page content site that shares trading guides and information for learning and reference.
+A content-led site that shares practical study guides and tips for university students, organized by topic so they can find help fast.
 
 ## Target User
 
-Myself — a personal learning and reference resource.
+All university students, any campus.
 
 ## User Goal
 
-Read trading guides and information to learn and reference trading concepts.
+Read practical study guides and tips, organized by topic, and find what they need fast.
 
 ## Build Shape
 
@@ -22,45 +22,46 @@ Content-led site
 
 ## Shape Confirmation
 
-Confirmed: The main value is reading, navigating, and learning from trading guides and information, organized across multiple pages.
+Confirmed: The main value is reading and browsing study guides and tips; the primary action is reading an article. No user-created data needs to persist in the browser.
 
 ## Version-One Success
 
-A multi-page site with clear navigation, factual trading content arranged into sections, and a responsive layout that works on mobile.
+A few real study-guide pages with clear navigation and a mobile-friendly layout.
 
 ## Now / Later / Never
 
 ### Now
 
-- Multi-page site with navigation
-- Factual trading guides and information
+- A few real study-guide pages with clear navigation
+- Content organized by topic
 - Responsive layout and mobile check
 - Working links and honest navigation
 
 ### Later
 
-- Additional trading topics or sections
-- Search or filtering features
+- More topics and guides
+- Search or filtering
 - More polished styling
 
 ### Never
 
-- Live data / APIs
 - Login or accounts
 - Payments or e-commerce
 - Database or backend
-- Multi-user features
+- Live APIs or external data feeds
+- User-generated content, comments, or multi-user features
+- Admin system or analytics tracking
 
 ## Assumptions
 
-- Content will be static, factual trading guides and information.
-- No live market data or external APIs required.
-- Personal use only; no multi-user or authentication needed.
+- Content is static, factual study guides and tips.
+- No live data, external APIs, or authentication required.
+- Educational/personal use; no multi-user needed.
 
 ## Proof Target
 
-A working multi-page site with navigation that displays trading guides and information, is responsive on mobile, and has no live data dependencies.
+A working multi-page content site with clear navigation that displays study guides organized by topic, is responsive on mobile, and has no live data dependencies.
 
 ## Trainer / Learner Notes
 
-Learner confirmed content-led site shape. Project is for personal learning and reference. No live data, login, payments, or backend required for version one.
+Learner confirmed content-led site shape. Scope guardrails: no login, payments, database, backend, live APIs, user-generated content, or multi-user features.

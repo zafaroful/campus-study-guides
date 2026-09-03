@@ -8,11 +8,11 @@
 
 ## Project Identity
 
-**Project Name:** Trading Board
+**Project Name:** Campus Study Guides
 
-**One-Sentence Concept:** A personal multi-page content site that shares trading guides and information for learning and reference.
+**One-Sentence Concept:** A content-led site that shares practical study guides and tips for university students, organized by topic so they can find help fast.
 
-**Target User:** Myself — a personal learning and reference resource.
+**Target User:** All university students, any campus.
 
 ## Build Shape
 
@@ -20,24 +20,25 @@ Content-led site
 
 ## Version-One Promise
 
-A working multi-page site with navigation that displays trading guides and information, is responsive on mobile, and has no live data dependencies.
+A working multi-page site with navigation that displays study guides and study methods, is responsive on mobile, and has no live data dependencies.
 
 ## Scope Lock
 
 ### Now
 
-- Multi-page site with navigation (Home, Guides, Strategies, About)
-- Factual trading guides and information
+- Multi-page site with navigation (Home, Guides, Study Methods, About)
+- Factual study guides and study methods for university students
+- Content organised by topic
 - Responsive layout and mobile check
 - Working links and honest navigation
-- Search box to filter guides and strategies
+- Search box to filter guides and study methods
 - Hamburger menu on mobile
 
 ### Later
 
-- Additional trading topics or sections
-- Search or filtering features
+- Additional topics or sections
 - More polished styling
+- Tag or category pages
 
 ### Never
 
@@ -46,6 +47,7 @@ A working multi-page site with navigation that displays trading guides and infor
 - Payments or e-commerce
 - Database or backend
 - Multi-user features
+- User-generated content or comments
 
 ## Architecture Summary
 
@@ -59,8 +61,8 @@ A working multi-page site with navigation that displays trading guides and infor
 ## Data / State / Storage Rules
 
 - All content is static and hardcoded in component files
-- **Guides:** Array of guide objects (title, excerpt, date, slug)
-- **Strategies:** Array of strategy objects (title, excerpt, difficulty, slug)
+- **Guides:** Array of guide objects (title, excerpt, topic, slug)
+- **Study methods:** Array of study-method objects (title, excerpt, level, slug)
 - **Search state:** Local component state for filter text
 - No external data fetching, no API calls, no backend
 - No browser storage required
@@ -79,7 +81,7 @@ A working multi-page site with navigation that displays trading guides and infor
 - No brand logos, exact UI clones, or proprietary identity
 - No fake testimonials, fake stats, or lorem ipsum
 
-**Visual Mood:** Professional and official — trustworthy, clear, and calm. Feels like a well-organized reference resource.
+**Visual Mood:** Professional and supportive — trustworthy, clear, and calm. Feels like a well-organised reference resource for students.
 
 **Layout Rules:**
 - Single-column flow on mobile, max-width container on desktop
@@ -151,7 +153,7 @@ src/
     Navbar.jsx
     Footer.jsx
     GuideCard.jsx
-    StrategyCard.jsx
+    StudyMethodCard.jsx
     SearchBox.jsx
   pages/
     HomePage.jsx
@@ -160,7 +162,7 @@ src/
     AboutPage.jsx
   data/
     guides.js
-    strategies.js
+    studyMethods.js
   styles/
     index.css (Tailwind directives + custom styles)
   App.jsx
@@ -178,10 +180,10 @@ postcss.config.js
 2. **Work Card 02:** Set up React Router and basic layout (Navbar, Footer, routing)
 3. **Work Card 03:** Create Home page with hero and latest guide preview
 4. **Work Card 04:** Create Guides page with guide cards grid
-5. **Work Card 05:** Create Strategies page with strategy cards grid
+5. **Work Card 05:** Create Study Methods page with method cards grid
 6. **Work Card 06:** Create About page with static content
 7. **Work Card 07:** Add SearchBox component and client-side filtering
-8. **Work Card 08:** Add sample trading content (guides and strategies data)
+8. **Work Card 08:** Add sample campus study content (guides and study methods data)
 9. **Work Card 09:** Mobile responsiveness and hamburger menu
 10. **Work Card 10:** Final verification, accessibility check, and polish
 
@@ -199,7 +201,7 @@ After each work card, verify:
 
 1. **Localhost proof:** Site runs on localhost with all pages accessible
 2. **Navigation proof:** All nav links work, hamburger menu works on mobile
-3. **Content proof:** Guides and strategies display correctly with sample data
+3. **Content proof:** Guides and study methods display correctly with sample data
 4. **Search proof:** Search box filters cards correctly
 5. **Responsive proof:** Layout works on mobile (320px), tablet, and desktop
 6. **Accessibility proof:** Keyboard navigation works, focus indicators visible
@@ -207,7 +209,7 @@ After each work card, verify:
 
 ## 60-Second Explanation Template
 
-"I built Trading Board, a personal multi-page content site for learning trading guides and strategies. It uses Vite, React, and Tailwind CSS with React Router for navigation. The site has four pages — Home, Guides, Strategies, and About — with a clean, professional design inspired by calm productivity apps. It includes a search box, responsive layout with a hamburger menu on mobile, and sample trading content. No live data, login, or backend is used."
+"I built Campus Study Guides, a content-led site that shares practical study guides and tips for university students. It uses Vite, React, and Tailwind CSS with React Router for navigation. The site has four pages — Home, Guides, Study Methods, and About — with a clean, supportive design inspired by calm productivity apps. It includes a search box, responsive layout with a hamburger menu on mobile, and sample study content. No live data, login, or backend is used."
 
 ## Guardrails for the Coding Agent
 

@@ -17,9 +17,9 @@ Content-led site
 
 A multi-page React app with client-side routing:
 
-- Home page — latest guide highlight and overview
-- Guides page — list of guide cards
-- Strategies page — list of strategy cards
+- Home page — latest guide highlight and overview of featured study methods
+- Guides page — list of study-guide cards organised by topic
+- Study Methods page — list of study-method cards with difficulty level
 - About page — site information
 
 ## Component Map
@@ -27,11 +27,11 @@ A multi-page React app with client-side routing:
 - `App` — main layout with navigation and routing
 - `Navbar` — top navigation with hamburger menu on mobile
 - `HomePage` — hero section + latest guide preview
-- `GuidesPage` — grid of guide cards
-- `StrategiesPage` — grid of strategy cards
+- `GuidesPage` — grid of study-guide cards
+- `StrategiesPage` — grid of study-method cards
 - `AboutPage` — static about content
 - `GuideCard` — reusable card component for guides
-- `StrategyCard` — reusable card component for strategies
+- `StudyMethodCard` — reusable card component for study methods
 - `SearchBox` — client-side search/filter component
 - `Footer` — simple footer with links
 
@@ -39,8 +39,8 @@ A multi-page React app with client-side routing:
 
 All content is static and hardcoded in component files:
 
-- **Guides:** Array of guide objects (title, excerpt, date, slug)
-- **Strategies:** Array of strategy objects (title, excerpt, difficulty, slug)
+- **Guides:** Array of guide objects (title, excerpt, topic, slug)
+- **Study methods:** Array of study-method objects (title, excerpt, level, slug)
 - **Search state:** Local component state for filter text
 
 No external data fetching, no API calls, no backend.
@@ -52,9 +52,9 @@ No browser storage required. All content is embedded in the app.
 ## User Flow
 
 1. Visitor lands on Home page
-2. Reads latest guide preview or browses all guides
+2. Reads the latest guide preview or browses the featured study methods
 3. Uses top navigation or search to find content
-4. Clicks a guide or strategy card to read details
+4. Clicks a guide or study-method card to read details
 5. Visits About page for site information
 
 ## File Expectations
@@ -65,7 +65,7 @@ src/
     Navbar.jsx
     Footer.jsx
     GuideCard.jsx
-    StrategyCard.jsx
+    StudyMethodCard.jsx
     SearchBox.jsx
   pages/
     HomePage.jsx
@@ -74,7 +74,7 @@ src/
     AboutPage.jsx
   data/
     guides.js
-    strategies.js
+    studyMethods.js
   styles/
     index.css (Tailwind directives + custom styles)
   App.jsx
@@ -101,12 +101,13 @@ vite.config.js
 - No live API integrations
 - No server-side rendering
 - No content management system
+- No user-generated content or comments
 
 ## Verification Notes
 
 - All pages render correctly
 - Navigation works between all pages
-- Search box filters guide/strategy cards
+- Search box filters guide and study-method cards
 - Hamburger menu works on mobile viewport
 - Layout is responsive on mobile, tablet, and desktop
 - No console errors or broken links
