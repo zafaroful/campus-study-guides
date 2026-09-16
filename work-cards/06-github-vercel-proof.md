@@ -90,4 +90,4 @@ If GitHub or Vercel deployment fails after 15 minutes, ask the trainer for Pair 
 
 ## Status
 
-Not started
+Local Git initialized and committed (step 2 complete). GitHub push and Vercel deploy pending (interactive — run by the learner).
