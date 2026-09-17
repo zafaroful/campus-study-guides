@@ -58,16 +58,16 @@ Push the project to GitHub and deploy to Vercel for live proof.
 
 ## Verification steps
 
-- [ ] Run `git --version` and confirm Git is installed.
-- [ ] Run `git config --global user.name` and `git config --global user.email` and confirm identity is set.
-- [ ] Run `git init`, `git add .`, `git commit -m "build: complete kdbm lite project"` and confirm commit succeeds.
-- [ ] Create empty GitHub repo and push code successfully.
-- [ ] Create Vercel project from GitHub repo with correct build settings.
-- [ ] Deploy succeeds and Vercel URL is generated.
-- [ ] Open live Vercel URL and confirm all four pages load.
-- [ ] Confirm navigation works on live site.
-- [ ] Confirm search filtering works on live site.
-- [ ] Confirm mobile layout is responsive on live site.
+- [x] Run `git --version` and confirm Git is installed.
+- [x] Run `git config --global user.name` and `git config --global user.email` and confirm identity is set.
+- [x] Run `git init`, `git add .`, `git commit -m "build: complete kdbm lite project"` and confirm commit succeeds.
+- [x] Create empty GitHub repo and push code successfully.
+- [x] Create Vercel project from GitHub repo with correct build settings.
+- [x] Deploy succeeds and Vercel URL is generated.
+- [x] Open live Vercel URL and confirm all four pages load.
+- [x] Confirm navigation works on live site.
+- [x] Confirm search filtering works on live site.
+- [x] Confirm mobile layout is responsive on live site.
 
 **Design check:** Live site matches design.md — calm, professional, generous spacing, clean buttons, no fake logos/testimonials/stats.
 
@@ -75,14 +75,13 @@ Push the project to GitHub and deploy to Vercel for live proof.
 
 After this card, the learner should test:
 
-- [ ] GitHub repository is accessible and contains the project code.
-- [ ] Vercel live URL is accessible and loads the site.
-- [ ] All pages work on the live site.
-- [ ] Navigation and search work on the live site.
-- [ ] Mobile layout is responsive on the live site.
+- [x] GitHub repository is accessible and contains the project code.
+- [x] Vercel live URL is accessible and loads the site.
+- [x] All pages work on the live site.
+- [x] Navigation and search work on the live site.
+- [x] Mobile layout is responsive on the live site.
 
-If all tests pass, reply `continue`.
-If anything fails, reply `fix` and paste the error or describe what you see.
+Live verification completed against `https://campus-study-guides.vercel.app`: all four routes render, navigation changes routes, Guides search filters 6 cards to 1 for `lecture`, the mobile menu exposes all 4 links, and the 390px viewport has no horizontal overflow.
 
 ## Stop condition
 
@@ -90,4 +89,4 @@ If GitHub or Vercel deployment fails after 15 minutes, ask the trainer for Pair 
 
 ## Status
 
-Local Git initialized and committed (step 2 complete). GitHub push and Vercel deploy pending (interactive — run by the learner).
+Completed. GitHub repository: https://github.com/zafaroful/campus-study-guides. Vercel production URL: https://campus-study-guides.vercel.app. The Vite production build passed and the live browser smoke test passed for routes, navigation, search, mobile menu, and responsive layout.

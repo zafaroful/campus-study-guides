@@ -1,4 +1,4 @@
-﻿# Build Status
+# Build Status
 
 ## Project
 
@@ -6,7 +6,7 @@
 - Build shape: Content-led site
 - Shape confirmation: Confirmed
 - Current KDBM Lite stage: Shipped
-- Current phase: Code complete, local Git committed; awaiting GitHub push + Vercel deploy (interactive steps run by the learner)
+- Current phase: Shipped — GitHub repository published and Vercel production deployment live
 - Current work card: None (build complete)
 
 ## Completed work cards
@@ -27,8 +27,7 @@
 
 ## In progress
 
-- GitHub push (interactive — run on the learner's machine, see steps below)
-- Vercel deploy (interactive — run on the learner's machine, see steps below)
+- None — deployment complete
 
 ## Blockers
 
@@ -66,36 +65,22 @@
 6. **Accessibility proof:** Semantic HTML (`header`, `nav`, `main`, `section`, `article`, `footer`), `aria-label` on both nav regions, `aria-expanded` + `aria-controls` on the hamburger, `sr-only` label on the search input, focus ring on the input and toggle, and 44px tap targets throughout.
 7. **No-slop proof:** No fake logos, testimonials, statistics, or lorem ipsum. The placeholder GitHub link was removed in favour of an on-page anchor.
 
-## Deploy links (fill in after push + deploy)
+## Deploy links
 
-- GitHub repo: `<add URL after pushing>`
-- Vercel live URL: `<add URL after first deploy>`
-- Vercel project name: `campus-study-guides` (suggested)
+- GitHub repo: https://github.com/zafaroful/campus-study-guides
+- Vercel live URL: https://campus-study-guides.vercel.app
+- Vercel project: https://vercel.com/zarul-ridzwans-projects-61bb0167/campus-study-guides
+- Vercel project name: `campus-study-guides`
 - Build command on Vercel: `npm run build`
 - Output directory on Vercel: `dist`
+- Deployment routing: `vercel.json` rewrites direct SPA routes to `/index.html`
 
-## Next instruction for the learner (deploy steps)
+## Deployment record
 
-The repo is already initialised and committed locally on `main` (commit `3613375`). Run these in the project folder:
-
-1. **Create an empty GitHub repo** named `campus-study-guides` (do **not** add README, license, or .gitignore — we already have them).
-2. **Push the code:**
-   ```bash
-   git remote add origin <your-github-repo-url>
-   git push -u origin main
-   ```
-3. **Open Vercel** → "Add New Project" → import the GitHub repo.
-4. **Configure the Vercel project:**
-   - Build command: `npm run build`
-   - Output directory: `dist`
-   - Framework preset: Vite (auto-detected)
-5. **Deploy** and copy the live URL.
-6. **Smoke-test the live site:**
-   - All four pages load
-   - Navigation works
-   - Search filtering works
-   - Mobile layout is responsive
-7. **Update this file** with the GitHub URL and Vercel URL once both are live.
+- GitHub repository created and `main` pushed successfully.
+- Vercel project created, connected to GitHub, and production deployment completed.
+- Direct routes `/`, `/guides`, `/strategies`, and `/about` return the application shell.
+- Live browser smoke test passed: four pages render, navigation changes routes, Guides search filters 6 cards to 1 for `lecture`, the mobile menu exposes all 4 links, and the 390px viewport has no horizontal overflow.
 
 ## 60-second explanation
 
@@ -110,9 +95,11 @@ The repo is already initialised and committed locally on `main` (commit `3613375
 - npm: 10.9.3
 - Git: 2.53.0.windows.1
 - Git identity: zafaroful / zafaroful98@gmail.com
-- GitHub account: Ready (login required on push)
-- Vercel account: Ready (login required on import)
+- GitHub repository: https://github.com/zafaroful/campus-study-guides
+- Vercel production URL: https://campus-study-guides.vercel.app
+- Vercel deployment status: Ready
 - KrackedDevs account: Ready
 - Localhost: Not running (start with `npm run dev` when needed)
 - Production build: passing (vite build, 40 modules, no errors; CSS 11.57 kB gzip 3.11 kB; JS 177.20 kB gzip 57.53 kB)
-- Local Git: branch `main`, commit `3613375` "build: complete kdbm lite project" (23 files, +3,509 / −86)
+- Local Git: branch `main`, latest commit `a16bb03` "fix: support direct SPA routes on Vercel"
+- Live smoke test: passed for routes, navigation, search, mobile menu, and 390px responsive layout
